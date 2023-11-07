@@ -1,0 +1,37 @@
+.footer-wrapper {
+  background-color: #333333;
+  color: white;
+  min-height: 300 px;
+}
+
+footer {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer > section,
+footer > nav {
+  flex: 1; /* Каждый элемент будет занимать равное пространство */
+  min-width: 160px; /* Минимальная ширина для каждой колонки, чтобы обеспечить читаемость */
+}
+
+/* Стилизация для логотипа */
+.footer_logo img {
+  width: 100%; /* Чтобы логотип был респонсивным и адаптировался к размеру колонки */
+  max-width: 150px; /* Максимальная ширина логотипа */
+}
+
+/* Стилизация для навигации, контактов и социальных сетей */
+.footer_nav > ul,
+.footer__contacts,
+.footer_socialmedia {
+  display: flex; /* Также используйте flexbox внутри для выравнивания списков */
+  flex-direction: column; /* Для вертикального выравнивания элементов списка */
+}
+
+.footer__contacts li,
+.footer_socialmedia li {
+  margin-bottom: 10px; /* Добавляем немного маржина снизу для каждого элемента списка */
+}

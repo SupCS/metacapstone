@@ -1,16 +1,20 @@
 import "./App.css";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <main>
-        <section className="heroSection">Hero Section</section>
-        <section className="reservationSection">Reservation</section>
-        <section className="personalinfoSection">Personal Information</section>
-      </main>
+      <div className="container">
+        <Header></Header>
+        <main>
+          <section className="heroSection">Hero Section</section>
+          <section className="reservationSection">Reservation</section>
+          <section className="personalinfoSection">
+            Personal Information
+          </section>
+        </main>
+      </div>
       <Footer></Footer>
     </div>
   );

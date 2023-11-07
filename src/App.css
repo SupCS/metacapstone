@@ -1,38 +1,37 @@
+html,
+body {
+  height: 100%; /* Высота всего документа */
+  margin: 0; /* Убираем отступы */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+}
+
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px; /* это ваш gutter между колонками */
+  padding-left: 70px; /* это ваш left margin */
+  padding-right: 70px; /* это ваш right margin */
+  max-width: 100%; /* это гарантирует, что контейнер не будет шире экрана */
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  grid-column: 2 / 10; /* Занимают все колонки от первой до последней */
 }
