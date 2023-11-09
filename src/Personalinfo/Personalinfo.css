@@ -1,26 +1,26 @@
-.reservationSection {
+.personalInfoSection {
   margin-top: 100px;
 }
 
-.reservation__wrapper {
+.personalInfo__wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
   gap: 20px; /* Пробел между колонками */
 }
 
-.reservationSection .input-group__wrapper {
+.personalInfoSection .input-group__wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px; /* Пробел между инпутами */
 }
 
-.reservationSection .input-group:nth-child(2) {
+.personalInfoSection .input-group:nth-child(2) {
   align-items: flex-end; /* Прижимает инпуты к правому краю */
 }
 
 /* Стилизация инпутов, если нужно */
-.reservationSection input {
+.personalInfoSection input {
   width: 100%; /* Полная ширина внутри своего контейнера */
   padding: 10px; /* Некоторый паддинг для визуального комфорта */
   /* Дополнительные стили... */

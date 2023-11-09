@@ -1,8 +1,10 @@
 import "./App.css";
+import Button from "./components/Button/Button";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Reservation from "./components/Reservation/Reservation";
+import Personalinfo from "./Personalinfo/Personalinfo";
 
 function App() {
   return (
@@ -14,9 +16,10 @@ function App() {
       <div className="container">
         <main>
           <Reservation />
-          <section className="personalinfoSection">
-            Personal Information
-          </section>
+          <Personalinfo />
+          <div className="button__container">
+            <Button title="Confirm" />
+          </div>
         </main>
       </div>
       <Footer></Footer>

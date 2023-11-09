@@ -4,7 +4,7 @@ import FooterLogo from "./FooterLogo.png";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper">
+    <section className="footer-wrapper">
       <div className="container">
         <footer>
           <section className="footer_logo">
@@ -39,7 +39,7 @@ const Footer = () => {
           </section>
         </footer>
       </div>
-    </div>
+    </section>
   );
 };
 

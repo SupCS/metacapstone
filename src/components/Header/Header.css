@@ -2,11 +2,21 @@ header {
   display: flex; /* Использует Flexbox для выравнивания дочерних элементов */
   justify-content: space-around; /* Располагает дочерние элементы равномерно в пространстве контейнера */
   align-items: center; /* Выравнивает дочерние элементы по центру по вертикали */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 header .logo {
-  /* Здесь могут быть стили для логотипа, например: */
   margin-right: 20px; /* Добавляет отступ справа, если необходимо */
+  max-width: 263px;
+  width: 100%;
+}
+
+header .logo img {
+  width: 100%;
+  max-width: 263px;
+  height: auto;
 }
 
 header nav ul {

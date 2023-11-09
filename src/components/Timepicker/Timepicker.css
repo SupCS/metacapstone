@@ -1,0 +1,24 @@
+/* Timepicker.css */
+input[type="time"] {
+  background-color: #0080ff;
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Style the time picker indicator to match the date picker */
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Might need to target the time picker's indicator specifically */
+/* input[type="time"]::-webkit-calendar-picker-indicator { */
+/* This will inherit or override the styles from date picker indicator as needed */
+/* } */

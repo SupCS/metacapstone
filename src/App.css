@@ -46,9 +46,19 @@ a {
   max-width: 100%; /* это гарантирует, что контейнер не будет шире экрана */
 }
 
-header,
+main {
+  width: 100%;
+}
+/* header,
 main,
 footer,
 .hero__main {
-  grid-column: 2 / 10; /* Занимают все колонки от первой до последней */
+  grid-column: 2 / 10; /* Занимают все колонки от первой до последней
+} */
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
 }
