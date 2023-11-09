@@ -2,11 +2,29 @@ html,
 body {
   height: 100%; /* Высота всего документа */
   margin: 0; /* Убираем отступы */
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -21,17 +39,16 @@ a {
 
 .container {
   flex: 1;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
   grid-gap: 20px; /* это ваш gutter между колонками */
-  padding-left: 70px; /* это ваш left margin */
-  padding-right: 70px; /* это ваш right margin */
+  padding-left: 180px; /* это ваш left margin */
+  padding-right: 180px; /* это ваш right margin */
   max-width: 100%; /* это гарантирует, что контейнер не будет шире экрана */
-  margin: 0;
 }
 
 header,
 main,
-footer {
+footer,
+.hero__main {
   grid-column: 2 / 10; /* Занимают все колонки от первой до последней */
 }

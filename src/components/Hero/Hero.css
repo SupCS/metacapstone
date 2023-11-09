@@ -1,0 +1,55 @@
+.hero__section {
+  position: relative;
+}
+
+.hero__wrapper {
+  width: 100%;
+  position: relative;
+  background-color: #495e57;
+}
+
+.hero__main {
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  height: 300px;
+  max-width: 530px;
+}
+
+.hero__main h1 {
+  display: inline-block;
+  color: #f4ce14;
+  font-family: Markazi Text;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero__header {
+  position: relative;
+  min-height: 88px;
+}
+
+.hero__header h2 {
+  font-family: Markazi Text;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  bottom: -15px;
+}
+
+.hero__image-container {
+  position: absolute;
+  max-width: 420px;
+  max-height: 440px;
+  right: 180px;
+  top: 40px;
+}
+
+.hero__image {
+  width: 100%;
+  border-radius: 16px;
+}
