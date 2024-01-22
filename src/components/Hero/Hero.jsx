@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import restaurant from "./restaurant.jpg";
+import Button from "../Button/Button";
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
               Find a table for any occasion! Reserve a table for you and your
               company in a few clicks!
             </p>
-            <button>Reserve a table</button>
+            <Button title={"Reserve a table"}></Button>
           </div>
         </div>
         <div className="hero__image-container">

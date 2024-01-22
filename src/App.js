@@ -15,11 +15,13 @@ function App() {
       <Hero />
       <div className="container">
         <main>
-          <Reservation />
-          <Personalinfo />
-          <div className="button__container">
-            <Button title="Confirm" />
-          </div>
+          <form>
+            <Reservation />
+            <Personalinfo />
+            <div className="button__container">
+              <Button title="Confirm" />
+            </div>
+          </form>
         </main>
       </div>
       <Footer></Footer>
