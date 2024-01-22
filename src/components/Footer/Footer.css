@@ -5,34 +5,47 @@
   margin-top: 115px;
 }
 
+.footer-wrapper h3 {
+  color: #fff;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.footer-wrapper li {
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
 footer {
   margin: 25px 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-footer > section,
-footer > nav {
-  flex: 1; /* Каждый элемент будет занимать равное пространство */
-  min-width: 160px; /* Минимальная ширина для каждой колонки, чтобы обеспечить читаемость */
+.footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+
+  margin-left: 130px;
 }
 
-/* Стилизация для логотипа */
 .footer_logo img {
-  width: 100%; /* Чтобы логотип был респонсивным и адаптировался к размеру колонки */
-  max-width: 150px; /* Максимальная ширина логотипа */
+  width: 100%;
+  max-width: 150px;
 }
 
-/* Стилизация для навигации, контактов и социальных сетей */
-.footer_nav > ul,
+.footer_nav,
 .footer__contacts,
 .footer_socialmedia {
-  display: flex; /* Также используйте flexbox внутри для выравнивания списков */
-  flex-direction: column; /* Для вертикального выравнивания элементов списка */
-}
-
-.footer__contacts li,
-.footer_socialmedia li {
-  margin-bottom: 10px; /* Добавляем немного маржина снизу для каждого элемента списка */
+  display: flex;
+  flex-direction: column;
 }

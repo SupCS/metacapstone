@@ -5,18 +5,18 @@
 .reservation__wrapper {
   width: 100%;
   display: grid;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
-  gap: 20px; /* Пробел между колонками */
 }
 
-.reservationSection .input-group__wrapper {
+.reservationSection .input-group {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Пробел между инпутами */
+  gap: 30px;
 }
 
-.reservationSection .input-group:nth-child(2) {
-  align-items: flex-end; /* Прижимает инпуты к правому краю */
+.reservation__wrapper .input-group__wrapper:nth-child(2) {
+  justify-self: flex-end;
 }
 
 /* Стилизация инпутов, если нужно */
@@ -28,11 +28,38 @@
 
 .additional-comment {
   padding: 20px;
-  border: none;
+  border: 1px solid #d5d8de;
   outline: none;
   width: 400px;
   height: 279px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: #7d7d7d;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.reservationSection > h2 {
+  font-family: Karla;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.input-group__wrapper h3 {
+  color: #000;
+  font-family: Karla;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 12px;
 }
