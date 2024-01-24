@@ -75,6 +75,9 @@ export default function Reservation() {
     }
   };
 
+  const isFormValid =
+    selectedDate && selectedTime && selectedOccasion && selectedGuests;
+
   return (
     <section className="reservationSection">
       <form onSubmit={handleSubmit}>
@@ -109,6 +112,7 @@ export default function Reservation() {
                   placeholder="Leave your comment here"
                   value={comment}
                   onChange={(e) => setComment(e.target.value)}
+                  maxLength={500}
                 />
               </div>
             </div>
@@ -139,7 +143,10 @@ export default function Reservation() {
           </div>
         </div>
         <div className="button__container">
-          <Button title="Confirm" />
+          {!isFormValid && (
+            <p style={{ color: "red" }}>Please fill all fields to proceed.</p>
+          )}
+          <Button title="Confirm" disabled={!isFormValid} />
         </div>
       </form>
     </section>

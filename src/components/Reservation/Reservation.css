@@ -63,3 +63,13 @@
   line-height: normal;
   margin-bottom: 12px;
 }
+
+.button__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button__container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
