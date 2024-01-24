@@ -3,13 +3,18 @@ import "./CustomSelect.css";
 import arrowdown from "../../assets/img/arrowdown.svg";
 import arrowwhite from "../../assets/img/arrowwhite.svg";
 
-const CustomSelect = ({ options, placeholder, icon }) => {
-  const [selectedOption, setSelectedOption] = useState(null);
+const CustomSelect = ({
+  options,
+  placeholder,
+  icon,
+  selectedOption,
+  onSelect,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSelect = (option, event) => {
     event.preventDefault();
-    setSelectedOption(option);
+    onSelect(option); // Обновляем состояние в родительском компоненте
     setIsOpen(false);
   };
 
@@ -29,8 +34,7 @@ const CustomSelect = ({ options, placeholder, icon }) => {
           alt="Icon"
           className={`icon ${selectedOption ? "icon-hidden" : ""}`}
         />
-        {!selectedOption && placeholder}
-        {selectedOption}
+        {selectedOption ? selectedOption : placeholder}
         <img
           src={selectedOption ? arrowwhite : arrowdown}
           alt="Arrow"
@@ -39,15 +43,17 @@ const CustomSelect = ({ options, placeholder, icon }) => {
       </button>
 
       <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
-        {options.map((option, index) => (
-          <button
-            key={index}
-            className="dropdown-item"
-            onClick={(event) => handleSelect(option, event)}
-          >
-            {option}
-          </button>
-        ))}
+        {options &&
+          Array.isArray(options) &&
+          options.map((option, index) => (
+            <button
+              key={index}
+              className="dropdown-item"
+              onClick={(event) => handleSelect(option, event)}
+            >
+              {option}
+            </button>
+          ))}
       </div>
     </div>
   );
